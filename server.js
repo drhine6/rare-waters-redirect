@@ -4,7 +4,7 @@ const app = express();
 
 // Catch all routes and redirect permanently
 app.use((req, res) => {
-  const newUrl = `https://infiniteoutdoorsusa.com${req.originalUrl}`;
+  const newUrl = `https://infiniteoutdoorsusa.com/rare-waters?from=${req.originalUrl}`;
   res.redirect(301, newUrl);
 });
 
